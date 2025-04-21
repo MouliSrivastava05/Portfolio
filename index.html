@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Name | Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+          (function () {
+            emailjs.init("YOUR_PUBLIC_KEY"); 
+          })();
+        </script>
+      </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+           
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend developer</p>
+            <h1>Hi, I'm <span>Mouli</span><br>Srivastava</h1>
+        </div>
+    </div>
+</div>
+<!-------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/PortfolioImg.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Analytical programmer passionate about solving complex problems through clean, efficient solutions. Thrives in collaborative environments where continuous learning and adaptability drive impactful results. Committed to growing as a developer while delivering tangible value.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Tech Stack</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><h3>HTML, CSS</h3></span><br>Frontend</li>
+                        <li><span><h3>JavaScript</h3></span><br>Frontend</li>
+                        <li><span><h3>React JS</h3></span><br>Frontend</li>
+                        <li><span><h3>Python</h3></span><br>Backend</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><h3>2024-2028</h3></span><br>Newton School Of Technology</li>
+                        <li><span><h3>2024 (Intermediate)</h3></span><br>Lal Bahadur Shastri School</li>
+                        <li><span><h3>2022 (Matriculation)</h3></span><br>Lucknow Public School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------projects---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2></h2>
+                <p>Coming soon...</p>
+                
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2></h2>
+                <p>Coming soon...</p>
+               
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2></h2>
+                <p>Coming soon...</p>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Connect With Me</h1>
+               
+                <p class="fas fa-paper-plane"> <h3>Email:</h3>moulisrivastava5@gmail.com</p>
+                <p class="fas fa-paper-plane"><h3>LinkedIn:</h3>https://www.linkedin.com/in/mouli-srivastava-083298333/</p>
+              
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Resume-Mouli Srivastava.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                  <input type="text" name="user_name" placeholder="Your Name" required>
+                  <input type="email" name="user_email" placeholder="Your Email" required>
+                  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright©Mouli</a></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
